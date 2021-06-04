@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+
+{% block content %}
+
+    <div class=container">
+      <h1>Subscribe to something</h1>
+        <br/><br/>
+
+<form action="/form" method="POST">
+  <div class="mb-3">
+    <input type="text" class="form-control" id="exampleInputEmail1"
+           aria-describedby="emailHelp"
+            placeholder="Time DDMMYY" name="time">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+    <div class="text">
+    <input type="text" class="form-control" id="exampleInputEmail1"
+           aria-describedby="emailHelp"
+            placeholder="Location" name="location">
+        <br/><br/>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+    </div>
+
+{% endblock %}
